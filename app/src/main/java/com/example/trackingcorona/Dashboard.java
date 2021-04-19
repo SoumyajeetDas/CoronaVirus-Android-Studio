@@ -46,7 +46,7 @@ public class Dashboard extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
-    protected void onStart() {
+    rotected void onStart() {
         super.onStart();
 
         if(!isConnected(Dashboard.this))
