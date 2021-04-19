@@ -50,14 +50,12 @@ public class Dashboard extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-
         if(!isConnected(Dashboard.this))
         {
             loading.setVisibility(View.GONE);
             cl1.setVisibility(View.GONE);
             showCustomDialog();
         }
-
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
