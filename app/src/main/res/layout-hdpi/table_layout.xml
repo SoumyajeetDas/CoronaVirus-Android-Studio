@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/border"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/district"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="@font/alef_bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="State Name"
+        android:textColor="#C0392B"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/cases"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+        android:fontFamily="@font/archivo_black"
+        android:paddingLeft="40sp"
+        android:paddingTop="20dp"
+        android:text="0"
+        android:textColor="#C0392B"
+        android:textSize="17sp" />
+</LinearLayout>
