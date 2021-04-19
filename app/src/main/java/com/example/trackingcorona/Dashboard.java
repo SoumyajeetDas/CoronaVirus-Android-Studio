@@ -49,7 +49,7 @@ public class Dashboard extends AppCompatActivity {
 
     protected void onStart() {
         super.onStart();
-        /**
+
 
         if(!isConnected(Dashboard.this))
         {
@@ -57,7 +57,6 @@ public class Dashboard extends AppCompatActivity {
             cl1.setVisibility(View.GONE);
             showCustomDialog();
         }
-         **/
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
