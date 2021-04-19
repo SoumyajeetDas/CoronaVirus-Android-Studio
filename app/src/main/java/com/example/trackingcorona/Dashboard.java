@@ -317,7 +317,7 @@ public class Dashboard extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(Dashboard.this);
-        builder.setTitle(R.string.app_name);
+        builder.setTitle("Corona Tracking");
         builder.setIcon(R.mipmap.ic_launcher);
         builder.setMessage("Do you want to exit?")
                 .setCancelable(false)
@@ -327,7 +327,7 @@ public class Dashboard extends AppCompatActivity {
                         Intent intent = new Intent(Intent.ACTION_MAIN);
                         intent.addCategory(Intent.CATEGORY_HOME);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                         System.exit(1);
                     }
