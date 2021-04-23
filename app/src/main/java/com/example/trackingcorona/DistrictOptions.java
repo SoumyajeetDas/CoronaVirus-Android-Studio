@@ -133,7 +133,7 @@ public class DistrictOptions extends AppCompatActivity {
                                     String dis_recovered = jsonObjectDistrict.getString("recovered");
 
                                     JSONObject jsonObjectDistNew = jsonObjectDistrict.getJSONObject("delta");
-                                    String dis_newcnf = jsonObjectDistNew.getString("recovered");
+                                    String dis_newcnf = jsonObjectDistNew.getString("confirmed");
                                     String dis_newdeath = jsonObjectDistNew.getString("deceased");
                                     String dis_newrecovered = jsonObjectDistNew.getString("recovered");
                                     al.add(new DistrictData(dis_name,dis_cnf,dis_death,dis_recovered,dis_newcnf,dis_newdeath,dis_newrecovered));
