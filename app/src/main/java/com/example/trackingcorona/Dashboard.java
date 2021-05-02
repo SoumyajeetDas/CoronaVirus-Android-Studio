@@ -131,7 +131,7 @@ public class Dashboard extends AppCompatActivity {
         RequestQueue requestQueue;
         requestQueue = Volley.newRequestQueue(Dashboard.this);
         JsonObjectRequest jsonobjectRequest = new JsonObjectRequest(Request.Method.GET,
-                "https://disease.sh/v3/covid-19/historical/India?lastdays=2", null, new Response.Listener<JSONObject>() {
+                "https://disease.sh/v3/covid-19/historical/India?", null, new Response.Listener<JSONObject>() {
 
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override

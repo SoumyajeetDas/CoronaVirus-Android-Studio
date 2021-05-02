@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this,Dashboard.class);
+                Intent intent = new Intent(MainActivity.this,Beginning.class);
                 startActivity(intent);
                 finish();
             }
