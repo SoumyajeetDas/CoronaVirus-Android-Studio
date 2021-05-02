@@ -14,6 +14,7 @@
         android:theme="@style/Theme.TrackingCorona">
         <activity android:name=".District"></activity>
         <activity android:name=".DistrictOptions" />
+        <activity android:name=".Beginning" />
         <activity android:name=".State" />
         <activity android:name=".StateOptions" />
         <activity android:name=".Dashboard" />
