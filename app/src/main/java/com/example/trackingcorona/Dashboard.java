@@ -146,13 +146,13 @@ public class Dashboard extends AppCompatActivity {
                     String s1[] = dateonedaypprev.split("-");
                     char year[]= s1[0].toCharArray();
                     String years=String.valueOf(year[2])+String.valueOf(year[3]);
-                    int n = affected.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2]+"/"+years);
+                    int n = affected.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2].replaceFirst ("^0*", "")+"/"+years);
 
                     String datetwodayprev = String.valueOf(findPrevTwoDay(todayDate));
                     String s2[] = datetwodayprev.split("-");
                     char year1[]= s2[0].toCharArray();
                     String years1=String.valueOf(year1[2])+String.valueOf(year1[3]);
-                    int n1 = affected.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                    int n1 = affected.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
 
                     int n2= n - n1;
                     String s = String.valueOf(n2);
@@ -160,16 +160,16 @@ public class Dashboard extends AppCompatActivity {
                     todaytotalaffected.setText(String.valueOf(n));
 
                     JSONObject deaths = obj.getJSONObject("deaths");
-                    int d1= deaths.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2]+"/"+years);
-                    int d2= deaths.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                    int d1= deaths.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2].replaceFirst ("^0*", "")+"/"+years);
+                    int d2= deaths.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
                     int d3 = d1-d2;
                     s=String.valueOf(d3);
                     todaydeath.setText(s);
                     todaytotaldeath.setText(String.valueOf(d1));
 
                     JSONObject recovered = obj.getJSONObject("recovered");
-                    int r1= recovered.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2]+"/"+years);
-                    int r2= recovered.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                    int r1= recovered.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2].replaceFirst ("^0*", "")+"/"+years);
+                    int r2= recovered.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
                     int r3 = r1-r2;
                     s=String.valueOf(r3);
                     todayrecovered.setText(s);
@@ -206,13 +206,13 @@ public class Dashboard extends AppCompatActivity {
                         String s1[] = dateonedaypprev.split("-");
                         char year[]= s1[0].toCharArray();
                         String years=String.valueOf(year[2])+String.valueOf(year[3]);
-                        int n = affected.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2]+"/"+years);
+                        int n = affected.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2].replaceFirst ("^0*", "")+"/"+years);
 
                         String datetwodayprev = String.valueOf(findPrevThreeDay(todayDate));
                         String s2[] = datetwodayprev.split("-");
                         char year1[]= s2[0].toCharArray();
                         String years1=String.valueOf(year1[2])+String.valueOf(year1[3]);
-                        int n1 = affected.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                        int n1 = affected.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
 
                         int n2= n - n1;
                         String s = String.valueOf(n2);
@@ -220,16 +220,16 @@ public class Dashboard extends AppCompatActivity {
                         todaytotalaffected.setText(String.valueOf(n));
 
                         JSONObject deaths = obj.getJSONObject("deaths");
-                        int d1= deaths.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2]+"/"+years);
-                        int d2= deaths.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                        int d1= deaths.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2].replaceFirst ("^0*", "")+"/"+years);
+                        int d2= deaths.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
                         int d3 = d1-d2;
                         s=String.valueOf(d3);
                         todaydeath.setText(s);
                         todaytotaldeath.setText(String.valueOf(d1));
 
                         JSONObject recovered = obj.getJSONObject("recovered");
-                        int r1= recovered.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2]+"/"+years);
-                        int r2= recovered.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                        int r1= recovered.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2].replaceFirst ("^0*", "")+"/"+years);
+                        int r2= recovered.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
                         int r3 = r1-r2;
                         s=String.valueOf(r3);
                         todayrecovered.setText(s);

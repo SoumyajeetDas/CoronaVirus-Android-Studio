@@ -143,7 +143,7 @@ public class Beginning extends AppCompatActivity {
                     String s1[] = dateonedaypprev.split("-");
                     char year[]= s1[0].toCharArray();
                     String years=String.valueOf(year[2])+String.valueOf(year[3]);
-                    float n = (float)affected.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2]+"/"+years);
+                    float n = (float)affected.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2].replaceFirst ("^0*", "")+"/"+years);
 
 
                     //24
@@ -151,7 +151,7 @@ public class Beginning extends AppCompatActivity {
                     String s2[] = datetwodayprev.split("-");
                     char year1[]= s2[0].toCharArray();
                     String years1=String.valueOf(year1[2])+String.valueOf(year1[3]);
-                    float n1 = (float)affected.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                    float n1 = (float)affected.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
 
                     float a = n-n1;
 
@@ -160,7 +160,7 @@ public class Beginning extends AppCompatActivity {
                     String s3[] = datethreedayprev.split("-");
                     char year2[]= s3[0].toCharArray();
                     String years2=String.valueOf(year2[2])+String.valueOf(year2[3]);
-                    float n2 = (float)affected.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2]+"/"+years2);
+                    float n2 = (float)affected.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2].replaceFirst ("^0*", "")+"/"+years2);
 
                     float b = n1-n2;
 
@@ -169,7 +169,7 @@ public class Beginning extends AppCompatActivity {
                     String s4[] = datefourdayprev.split("-");
                     char year3[]= s4[0].toCharArray();
                     String years3=String.valueOf(year3[2])+String.valueOf(year3[3]);
-                    float n3 = (float)affected.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2]+"/"+years3);
+                    float n3 = (float)affected.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2].replaceFirst ("^0*", "")+"/"+years3);
 
                     float c = n2-n3;
 
@@ -178,7 +178,7 @@ public class Beginning extends AppCompatActivity {
                     String s5[] = datefivedayprev.split("-");
                     char year4[]= s5[0].toCharArray();
                     String years4=String.valueOf(year4[2])+String.valueOf(year4[3]);
-                    float n4 = (float)affected.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2]+"/"+years4);
+                    float n4 = (float)affected.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2].replaceFirst ("^0*", "")+"/"+years4);
 
                     float d = n3-n4;
 
@@ -187,7 +187,7 @@ public class Beginning extends AppCompatActivity {
                     String s6[] = datesixdayprev.split("-");
                     char year5[]= s6[0].toCharArray();
                     String years5=String.valueOf(year5[2])+String.valueOf(year5[3]);
-                    float n5 = (float)affected.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2]+"/"+years5);
+                    float n5 = (float)affected.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2].replaceFirst ("^0*", "")+"/"+years5);
 
                     float e = n4-n5;
 
@@ -196,7 +196,7 @@ public class Beginning extends AppCompatActivity {
                     String s7[] = datesevendayprev.split("-");
                     char year6[]= s7[0].toCharArray();
                     String years6=String.valueOf(year6[2])+String.valueOf(year6[3]);
-                    float n6 = (float)affected.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2]+"/"+years6);
+                    float n6 = (float)affected.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2].replaceFirst ("^0*", "")+"/"+years6);
 
                     float f = n5-n6;
 
@@ -206,7 +206,7 @@ public class Beginning extends AppCompatActivity {
                     String s8[] = dateeightdayprev.split("-");
                     char year7[]= s8[0].toCharArray();
                     String years7=String.valueOf(year7[2])+String.valueOf(year7[3]);
-                    float n7 = (float)affected.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2]+"/"+years7);
+                    float n7 = (float)affected.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2].replaceFirst ("^0*", "")+"/"+years7);
 
                     float g = n6-n7;
 
@@ -215,63 +215,63 @@ public class Beginning extends AppCompatActivity {
 
 
                     //25
-                    float d1= (float)deaths.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2]+"/"+years);
-                    float d2= (float)deaths.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                    float d1= (float)deaths.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2].replaceFirst ("^0*", "")+"/"+years);
+                    float d2= (float)deaths.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
                     float a1 = d1-d2;
 
                     //24
-                    float d3= (float)deaths.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2]+"/"+years2);
+                    float d3= (float)deaths.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2].replaceFirst ("^0*", "")+"/"+years2);
                     float b1 = d2-d3;
 
 
                     //23
-                    float d4= (float)deaths.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2]+"/"+years3);
+                    float d4= (float)deaths.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2].replaceFirst ("^0*", "")+"/"+years3);
                     float c1 = d3-d4;
 
                     //22
-                    float d5= (float)deaths.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2]+"/"+years4);
+                    float d5= (float)deaths.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2].replaceFirst ("^0*", "")+"/"+years4);
                     float d11 = d4-d5;
 
                     //21
-                    float d6= (float)deaths.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2]+"/"+years5);
+                    float d6= (float)deaths.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2].replaceFirst ("^0*", "")+"/"+years5);
                     float e1 = d5-d6;
 
                     //20
-                    float d7= (float)deaths.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2]+"/"+years6);
+                    float d7= (float)deaths.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2].replaceFirst ("^0*", "")+"/"+years6);
                     float f1 = d6-d7;
 
 
                     //19
-                    float d8= (float)deaths.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2]+"/"+years7);
+                    float d8= (float)deaths.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2].replaceFirst ("^0*", "")+"/"+years7);
                     float g1 = d7-d8;
 
 
 
 
                     JSONObject recovered = obj.getJSONObject("recovered");
-                    float r1= (float)recovered.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2]+"/"+years);
-                    float r2= (float)recovered.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                    float r1= (float)recovered.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2].replaceFirst ("^0*", "")+"/"+years);
+                    float r2= (float)recovered.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
                     float p1 = r1-r2;
 
-                    float r3= (float)recovered.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2]+"/"+years2);
+                    float r3= (float)recovered.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2].replaceFirst ("^0*", "")+"/"+years2);
                     float p2 = r2-r3;
 
-                    float r4= (float)recovered.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2]+"/"+years3);
+                    float r4= (float)recovered.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2].replaceFirst ("^0*", "")+"/"+years3);
                     float p3 = r3-r4;
 
 
-                    float r5= (float)recovered.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2]+"/"+years4);
+                    float r5= (float)recovered.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2].replaceFirst ("^0*", "")+"/"+years4);
                     float p4 = r4-r5;
 
 
-                    float r6= (float)recovered.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2]+"/"+years5);
+                    float r6= (float)recovered.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2].replaceFirst ("^0*", "")+"/"+years5);
                     float p5 = r5-r6;
 
 
-                    float r7= (float)recovered.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2]+"/"+years6);
+                    float r7= (float)recovered.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2].replaceFirst ("^0*", "")+"/"+years6);
                     float p6 = r6-r7;
 
-                    float r8= (float)recovered.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2]+"/"+years7);
+                    float r8= (float)recovered.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2].replaceFirst ("^0*", "")+"/"+years7);
                     float p7 = r7-r8;
 
 
@@ -371,7 +371,7 @@ public class Beginning extends AppCompatActivity {
                         String s2[] = datetwodayprev.split("-");
                         char year1[]= s2[0].toCharArray();
                         String years1=String.valueOf(year1[2])+String.valueOf(year1[3]);
-                        float n1 = (float)affected.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                        float n1 = (float)affected.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
 
 
                         //23
@@ -379,7 +379,7 @@ public class Beginning extends AppCompatActivity {
                         String s3[] = datethreedayprev.split("-");
                         char year2[]= s3[0].toCharArray();
                         String years2=String.valueOf(year2[2])+String.valueOf(year2[3]);
-                        float n2 = (float)affected.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2]+"/"+years2);
+                        float n2 = (float)affected.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2].replaceFirst ("^0*", "")+"/"+years2);
 
                         float b = n1-n2;
 
@@ -388,7 +388,7 @@ public class Beginning extends AppCompatActivity {
                         String s4[] = datefourdayprev.split("-");
                         char year3[]= s4[0].toCharArray();
                         String years3=String.valueOf(year3[2])+String.valueOf(year3[3]);
-                        float n3 = (float)affected.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2]+"/"+years3);
+                        float n3 = (float)affected.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2].replaceFirst ("^0*", "")+"/"+years3);
 
                         float c = n2-n3;
 
@@ -397,7 +397,7 @@ public class Beginning extends AppCompatActivity {
                         String s5[] = datefivedayprev.split("-");
                         char year4[]= s5[0].toCharArray();
                         String years4=String.valueOf(year4[2])+String.valueOf(year4[3]);
-                        float n4 = (float)affected.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2]+"/"+years4);
+                        float n4 = (float)affected.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2].replaceFirst ("^0*", "")+"/"+years4);
 
                         float d = n3-n4;
 
@@ -406,7 +406,7 @@ public class Beginning extends AppCompatActivity {
                         String s6[] = datesixdayprev.split("-");
                         char year5[]= s6[0].toCharArray();
                         String years5=String.valueOf(year5[2])+String.valueOf(year5[3]);
-                        float n5 = (float)affected.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2]+"/"+years5);
+                        float n5 = (float)affected.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2].replaceFirst ("^0*", "")+"/"+years5);
 
                         float e = n4-n5;
 
@@ -415,7 +415,7 @@ public class Beginning extends AppCompatActivity {
                         String s7[] = datesevendayprev.split("-");
                         char year6[]= s7[0].toCharArray();
                         String years6=String.valueOf(year6[2])+String.valueOf(year6[3]);
-                        float n6 = (float)affected.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2]+"/"+years6);
+                        float n6 = (float)affected.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2].replaceFirst ("^0*", "")+"/"+years6);
 
                         float f = n5-n6;
 
@@ -425,7 +425,7 @@ public class Beginning extends AppCompatActivity {
                         String s8[] = dateeightdayprev.split("-");
                         char year7[]= s8[0].toCharArray();
                         String years7=String.valueOf(year7[2])+String.valueOf(year7[3]);
-                        float n7 = (float)affected.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2]+"/"+years7);
+                        float n7 = (float)affected.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2].replaceFirst ("^0*", "")+"/"+years7);
 
                         float g = n6-n7;
 
@@ -434,32 +434,32 @@ public class Beginning extends AppCompatActivity {
 
 
                         //25
-                        float d2= (float)deaths.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                        float d2= (float)deaths.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
 
                         //24
-                        float d3= (float)deaths.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2]+"/"+years2);
+                        float d3= (float)deaths.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2].replaceFirst ("^0*", "")+"/"+years2);
                         float b1 = d2-d3;
 
 
                         //23
-                        float d4= (float)deaths.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2]+"/"+years3);
+                        float d4= (float)deaths.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2].replaceFirst ("^0*", "")+"/"+years3);
                         float c1 = d3-d4;
 
                         //22
-                        float d5= (float)deaths.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2]+"/"+years4);
+                        float d5= (float)deaths.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2].replaceFirst ("^0*", "")+"/"+years4);
                         float d11 = d4-d5;
 
                         //21
-                        float d6= (float)deaths.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2]+"/"+years5);
+                        float d6= (float)deaths.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2].replaceFirst ("^0*", "")+"/"+years5);
                         float e1 = d5-d6;
 
                         //20
-                        float d7= (float)deaths.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2]+"/"+years6);
+                        float d7= (float)deaths.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2].replaceFirst ("^0*", "")+"/"+years6);
                         float f1 = d6-d7;
 
 
                         //19
-                        float d8= (float)deaths.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2]+"/"+years7);
+                        float d8= (float)deaths.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2].replaceFirst ("^0*", "")+"/"+years7);
                         float g1 = d7-d8;
 
 
@@ -467,27 +467,27 @@ public class Beginning extends AppCompatActivity {
 
                         JSONObject recovered = obj.getJSONObject("recovered");
 
-                        float r2= (float)recovered.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2]+"/"+years1);
+                        float r2= (float)recovered.getInt(s2[1].replaceFirst ("^0*", "")+"/"+s2[2].replaceFirst ("^0*", "")+"/"+years1);
 
-                        float r3= (float)recovered.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2]+"/"+years2);
+                        float r3= (float)recovered.getInt(s3[1].replaceFirst ("^0*", "")+"/"+s3[2].replaceFirst ("^0*", "")+"/"+years2);
                         float p2 = r2-r3;
 
-                        float r4= (float)recovered.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2]+"/"+years3);
+                        float r4= (float)recovered.getInt(s4[1].replaceFirst ("^0*", "")+"/"+s4[2].replaceFirst ("^0*", "")+"/"+years3);
                         float p3 = r3-r4;
 
 
-                        float r5= (float)recovered.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2]+"/"+years4);
+                        float r5= (float)recovered.getInt(s5[1].replaceFirst ("^0*", "")+"/"+s5[2].replaceFirst ("^0*", "")+"/"+years4);
                         float p4 = r4-r5;
 
 
-                        float r6= (float)recovered.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2]+"/"+years5);
+                        float r6= (float)recovered.getInt(s6[1].replaceFirst ("^0*", "")+"/"+s6[2].replaceFirst ("^0*", "")+"/"+years5);
                         float p5 = r5-r6;
 
 
-                        float r7= (float)recovered.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2]+"/"+years6);
+                        float r7= (float)recovered.getInt(s7[1].replaceFirst ("^0*", "")+"/"+s7[2].replaceFirst ("^0*", "")+"/"+years6);
                         float p6 = r6-r7;
 
-                        float r8= (float)recovered.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2]+"/"+years7);
+                        float r8= (float)recovered.getInt(s8[1].replaceFirst ("^0*", "")+"/"+s8[2].replaceFirst ("^0*", "")+"/"+years7);
                         float p7 = r7-r8;
 
 
