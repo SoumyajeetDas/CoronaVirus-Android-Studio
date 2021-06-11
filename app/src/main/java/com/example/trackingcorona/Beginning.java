@@ -144,7 +144,7 @@ public class Beginning extends AppCompatActivity {
                     char year[]= s1[0].toCharArray();
                     String years=String.valueOf(year[2])+String.valueOf(year[3]);
                     float n = (float)affected.getInt(s1[1].replaceFirst ("^0*", "")+"/"+s1[2].replaceFirst ("^0*", "")+"/"+years);
-
+                    //getInt() is used to get the Integer Value with respect to key in the JSON object
 
                     //24
                     String datetwodayprev = String.valueOf(findPrevDay(todayDate,2));

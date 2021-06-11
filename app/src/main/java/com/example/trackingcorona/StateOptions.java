@@ -128,7 +128,7 @@ public class StateOptions extends AppCompatActivity {
                         {
                             Log.d("Soumyajeet","Entering jsonArray");
                             JSONObject statewise = jsonArray.getJSONObject(i);
-                            String str_cnf = statewise.getString("confirmed");
+                            String str_cnf = statewise.getString("confirmed"); //getString() is used to fetch the string data wrt to a key in Json
                             String str_recovery = statewise.getString("recovered");
                             String str_name = statewise.getString("state");
                             String str_death = statewise.getString("deaths");
